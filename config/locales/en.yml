@@ -30,8 +30,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_title: My Notes
-  app_description: afjkdfnalf klnk vbni
+  app_title: COM2025 Website
+  app_description: Coursework Website
 
   home:
     h1: test
