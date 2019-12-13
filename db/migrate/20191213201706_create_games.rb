@@ -5,7 +5,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.string :developer
       t.string :genre
       t.string :rating
-
+      t.integer :user_id
       t.timestamps
     end
   end
