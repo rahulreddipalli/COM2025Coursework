@@ -30,8 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_title: COM2025 Website
+  app_title: PlayBot
   app_description: Coursework Website
 
   home:
-    h1: test
