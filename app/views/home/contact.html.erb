@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="jumbotron">
+<h1>
+  <center><%= t('.title') %></center>
+</h1>
+<p>
+  <%= t('.contact_us') %>
+</p>
+<%= form_tag contact_path, method: 'post' do %>
+  <%= label_tag :name, t('.name') %>
+  <br>
+  <%= text_field_tag :name, '',title:t('enter_name'), size:50 %>
+    <br>
+  <%= label_tag :email, t('.email') %>
+  <br>
+  <%= email_field_tag :email, '', title: t('.enter_email') %>
+  <br>
+  <%= label_tag :telephone, t('.telephone') %>
+  <br>
+  <%= email_field_tag :telephone, '', title: t('.enter_telephone') %>
+  <br>
+  <%= label_tag :message, t('.message') %>
+  <br>
+  <%= email_field_tag :message, '', title: t('.message'), size: 100 %>
+  <br>  <br>
+  <%= submit_tag t('.submit') %>
+<% end %>
+</div>
+</div>

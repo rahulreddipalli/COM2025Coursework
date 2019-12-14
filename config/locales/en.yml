@@ -34,3 +34,18 @@ en:
   app_description: Coursework Website
 
   home:
+    title: PlayBot Homepage
+    welcome: Welcome to PlayBot!
+
+    contact:
+      title: Get in touch!
+      contact_us: Please fill in your details and we'll get in touch with you as soon as possible!
+      name: "Name:"
+      enter_name: Enter your name
+      email: "Email"
+      enter_email: Enter your email address
+      telephone: "Phone:"
+      enter_telephone: Enter your phone number
+      message: "Message:"
+      enter_message: Enter your message
+      submit: Contact Us
