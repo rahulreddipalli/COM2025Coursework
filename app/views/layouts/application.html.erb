@@ -21,10 +21,10 @@
     <p class="alert">
       <%= alert %>
     </p>
-
-    <% flash.each do |key, value| %>
-    <%= content_tag :div, content_tag(:p, value), id: "#{key}"  unless value.blank? %>
-    <% end %>
+    <%= render 'layouts/footer' %>
+    <% #flash.each do |key, value| %>
+    <%= #content_tag :div, content_tag(:p, value), id: "#{key}"  unless value.blank? %>
+    <% #end %>
     <%= yield %>
 
   </body>
