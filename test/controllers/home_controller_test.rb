@@ -9,8 +9,10 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
   test "should get contact" do
     get contact_url
     assert_response :success
-
     assert_template layout: 'application'
+    assert_select 'title', 'Contact Us'
+    assert_select 'h1', 'Contact Us'
+    assert_select 'p', 'Contact Us'
   end
 
   test "should post request contact but no email" do
