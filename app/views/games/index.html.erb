@@ -1,5 +1,7 @@
-<h1>Listing games</h1>
-<table>
+<div class='container'>
+  <div class='jumbotron'>
+<h1>Your Game List </h1>
+<table style="border-spacing: 15px;">
   <thead>
     <tr>
       <th>Name</th>
@@ -27,13 +29,13 @@
           <%= game.rating %>
         </td>
         <td>
-          <%= link_to 'Show', game %>
+          <%= link_to 'View', game %>
         </td>
         <td>
           <%= link_to 'Edit', edit_game_path(game) %>
         </td>
         <td>
-          <%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Remove', game, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>
     <% end %>
@@ -41,3 +43,5 @@
 </table>
 <br/>
 <%= link_to 'New Game', new_game_path %>
+</div>
+</div>
