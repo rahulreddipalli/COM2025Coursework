@@ -49,3 +49,7 @@ en:
       message: "Message:"
       enter_message: Enter your message
       submit: Contact Us
+
+    request_contact:
+      no_email: Email field has been left blank.
+      email_sent: Your email has been sent and you shall receive a reply shortly.
