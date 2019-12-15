@@ -46,11 +46,6 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should update game" do
-    patch game_url(@game), params: { game: { developer: @game.developer, genre: @game.genre, name: @game.name, rating: @game.rating } }
-    assert_redirected_to game_url(@game)
-  end
-
   test "should destroy game" do
     assert_difference('Game.count', -1) do
       delete game_url(@game)
