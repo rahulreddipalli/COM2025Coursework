@@ -15,6 +15,7 @@
   </thead>
   <tbody>
     <% @games.each do |game| %>
+      <% if game.user_id == current_user.id %>
       <tr>
         <td>
           <%= game.name %>
@@ -38,6 +39,9 @@
           <%= link_to 'Remove', game, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>
+      <% end %>
+
+
     <% end %>
   </tbody>
 </table>

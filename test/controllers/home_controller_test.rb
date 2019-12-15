@@ -10,9 +10,8 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     get contact_url
     assert_response :success
     assert_template layout: 'application'
-    assert_select 'title', 'Contact Us'
-    assert_select 'h1', 'Contact Us'
-    assert_select 'p', 'Contact Us'
+    assert_select 'title', 'PlayBot'
+    assert_select 'h1', 'Get in touch!'
   end
 
   test "should post request contact but no email" do

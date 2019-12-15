@@ -1,10 +1,18 @@
 require 'test_helper'
 
 class GamesControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
     @game = games(:one)
-    @user = users(:two)
+    @user = users(:one)
+    sign_in @users
   end
+
+  #post user_session_path, params: {user: {
+  #   email: users(:one).email,
+  #   password: "password"
+  #}}
 
   test "should get index" do
     get games_url
@@ -25,7 +33,6 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
          rating: @game.rating,
          user_id: @game.user_id} }
     end
-
     assert_redirected_to game_url(Game.last)
   end
 
