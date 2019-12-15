@@ -6,7 +6,7 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @game = games(:one)
     @user = users(:one)
-    sign_in @users
+    sign_in @user
   end
 
   #post user_session_path, params: {user: {
